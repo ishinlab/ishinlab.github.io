@@ -1,1 +1,74 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IshinLab</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            color: #000;
+            font-family: monospace;
+            margin: 0;
+            flex-direction: column;
+        }
+        .ascii-art {
+            white-space: pre;
+            font-size: 2em;
+            text-align: center;
+        }
+        .art1 {
+            animation: color-change-1 2s infinite, move-up-down-1 2s infinite;
+        }
+        .art2 {
+            animation: color-change-2 2s infinite, move-up-down-2 2s infinite;
+        }
+        @keyframes color-change-1 {
+            0% { color: #000; }
+            50% { color: #00f; }
+            100% { color: #000; }
+        }
+        @keyframes color-change-2 {
+            0% { color: #000; }
+            50% { color: #f00; }
+            100% { color: #000; }
+        }
+        @keyframes move-up-down-1 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes move-up-down-2 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ascii-art art1">
+         ______  ____    __  __  ______   __  __     
+        /\__  _\/\  _`\ /\ \/\ \/\__  _\ /\ \/\ \    
+        \/_/\ \/\ \,\L\_\ \ \_\ \/_/\ \/ \ \ `\\ \   
+           \ \ \ \/_\__ \\ \  _  \ \ \ \  \ \ , ` \  
+            \_\ \__/\ \L\ \ \ \ \ \ \_\ \__\ \ \`\ \ 
+            /\_____\ `\____\ \_\ \_\/\_____\\ \_\ \_\
+            \/_____/\/_____/\/_/\/_/\/_____/ \/_/\/_/
+
+
+    </div>
+    <div class="ascii-art art2">
+             __       ______  ____      
+            /\ \     /\  _  \/\  _`\    
+            \ \ \    \ \ \L\ \ \ \L\ \  
+             \ \ \  __\ \  __ \ \  _ <' 
+              \ \ \L\ \\ \ \/\ \ \ \L\ \
+               \ \____/ \ \_\ \_\ \____/
+                 \/___/   \/_/\/_/\/___/  
+
+
+    </div>
+</body>
+</html>
